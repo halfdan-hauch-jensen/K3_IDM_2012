@@ -1,5 +1,9 @@
-//color c = new color(int(random(0, 255)), 0, 0);
+// initials drawing program
+
+
+// variables
 color c = color(int(random(0, 255)), int(random(0, 255)), int(random(0, 255)));
+int x = 0;
 
 void setup() {
   size(800, 300);
@@ -13,20 +17,21 @@ void draw() {
 
 
 void myName() {
+  x += 5;
+  translate(x, 0);
   rect(10,10, 10, height-20);
 }
 
 void mouseDragged() {
   noStroke();
-  //fill(255, 0, 0);
   ellipse(mouseX, mouseY, 5, 5);
-  println("X " + mouseX +" : Y " + mouseY);
+  //println("X " + mouseX +" : Y " + mouseY);
 }
 
 void mouseReleased(){
   c = color(int(random(0, 255)), int(random(0, 255)), int(random(0, 255)));
   fill(c);
-  println("changed color");
+  //println("changed color");
 }
 
 void keyPressed(){
