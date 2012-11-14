@@ -8,7 +8,7 @@ int eRadius = 15;
 float x = 100;
 float y = 100;
 float angle = PI/7;
-PImage img [] = new PImage [14];  // Declare variable "a" of type PImage
+PImage img [] = new PImage [14];
 
 void setup() {
   for(int i = 0; i < img.length; i++){
