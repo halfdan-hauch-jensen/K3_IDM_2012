@@ -1,5 +1,4 @@
 
-int saveCount = 0; 
 long lastMillis = 0;
 int timer = 300;
 int imgCount = 0;
@@ -19,7 +18,7 @@ void setup() {
 
 void draw() {
   imageAnimation();
-  movingRect();
+  //movingRect();
 }
 
 void imageAnimation(){
@@ -50,8 +49,5 @@ void movingRect(){
   ellipse(x, y, 2*eRadius, 2*eRadius);
 }
 
-void mouseReleased(){
-  save(saveCount+"");
-  saveCount++;
-}
+
 

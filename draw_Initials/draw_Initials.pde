@@ -4,8 +4,11 @@
 // variables
 color c = color(int(random(0, 255)), int(random(0, 255)), int(random(0, 255)));
 int x = 0;
+int saveCount = 0; 
+
 
 void setup() {
+  background(255);
   size(800, 300);
   println("executed setup ...");
   fill(random(0, 255), 0, 0);
@@ -17,7 +20,7 @@ void draw() {
 
 
 void myName() {
-  x += 5;
+  //x += 5;
   translate(x, 0);
   rect(10,10, 10, height-20);  
 }
@@ -35,6 +38,10 @@ void mouseReleased(){
 }
 
 void keyPressed(){
-  if(key == 'r') background(200);
+  if(key == 'r') background(255);
+  if (key == 's') {
+      save(saveCount+"");
+      saveCount++;
+  }
 }
 
