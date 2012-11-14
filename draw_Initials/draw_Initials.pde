@@ -19,7 +19,7 @@ void draw() {
 void myName() {
   x += 5;
   translate(x, 0);
-  rect(10,10, 10, height-20);
+  rect(10,10, 10, height-20);  
 }
 
 void mouseDragged() {
